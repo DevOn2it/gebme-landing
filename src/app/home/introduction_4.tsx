@@ -97,8 +97,8 @@ export const Introduction4 = () => {
         <Text
           fontWeight={"bold"}
           fontSize={{
-            lg: 30,
-            md: 24,
+            lg: 34,
+            md: 26,
             sm: 30,
           }}
         >
@@ -107,7 +107,7 @@ export const Introduction4 = () => {
         {ITEMS.map((item, index) => {
           return (
             <HStack key={index}>
-              <Image mr={1} width={50} src={item.imagePath} alt="Logo" />
+              <Image mr={1} width={45} src={item.imagePath} alt="Logo" />
               <VStack alignItems={"flex-start"}>
                 <Text
                   fontWeight={"semibold"}
