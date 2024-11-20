@@ -1,10 +1,10 @@
 "use client";
 import { useScreenUtil } from "@/context/ScreenUtilContext";
-import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { HStack, Image, Text, VStack } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
 
 const DesktopView = () => {
-  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
+  const [viewportHeight, setViewportHeight] = useState(0);
   const firstImageRef = useRef<HTMLImageElement | null>(null);
   const secondImageRef = useRef<HTMLImageElement | null>(null);
   const thirdImageRef = useRef<HTMLImageElement | null>(null);
